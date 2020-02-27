@@ -1,0 +1,72 @@
+cd katalog # komentarz
+pwd # Print Working
+
+vim # editor
+shift + insert #wklejanie 
+clear # cls
+
+
+Polecenie :
+1.git
+2.
+==============
+git init #START , powstanie katalog .git
+ls -la # costam lista
+git status
+
+git add nazwa_istniejacegopliku.rozszerzenie
+git add -h lista opcji?
+
+git add --help
+git commit -m "Pierwszy commit" #"  Komentarz "
+git add. ;git commit  -m "Commit 2"   |-m tworzy etykietke
+
+git log --oneline # kronika commitow
+========================
+cd d:/
+git init --bare bank # repozytorium nagie
+#----------------------------------------------- 
+git init robocze # repozytorium do pracy
+cd d:/robocze
+#---Konfiguracja repozytorium
+git config --local user.name Mikki
+git config --local user.email mafcio@hotmail.com
+git remote add origin d:/bank
+git config --local alias.drz 'log --oneline --graph --all'
+git config --local -l
+
+cd robocze # przejscie do folderu
+git add.  ; git commit  -m komit2
+
+echo puchatek>>zad2.txt
+
+git push -u origin master
+
+git log
+git clone bank szef
+
+git drz #historia commitow sciaga z banku dane?
+
+
+====konf dla sef
+git config --local user.name szef
+git config --local user.email szef@hotmail.com
+git remote add origin d:/bank
+git config --local alias.drz 'log --oneline --graph --all'
+
+cd d:/
+git init --bare bank # repozytorium nagie
+#----------------------------------------------- 
+git init robocze # repozytorium do pracy
+cd d:/robocze
+#---Konfiguracja repozytorium
+git config --local user.name Mikki
+git config --local user.email mafcio@hotmail.com
+git remote add origin d:/bank
+git config --local alias.drz 'log --oneline --graph --all'
+git config --local -l
+
+cd robocze # przejscie do folderu
+git add  
+
+git clone bank szef
