@@ -1,29 +1,26 @@
 cd katalog # komentarz
+cd d:/
 pwd # Print Working
 
 vim # editor
 shift + insert #wklejanie 
 clear # cls
-
-
-Polecenie :
-1.git
-2.
+(tyczy sie git bash)
 ==============
+
 git init #START , powstanie katalog .git
 ls -la # costam lista
 git status
 
-git add nazwa_istniejacegopliku.rozszerzenie
+git add nazwa_istniejacego_pliku.rozszerzenie
 git add -h lista opcji?
-
 git add --help
-git commit -m "Pierwszy commit" #"  Komentarz "
+
+git commit -m "Pierwszy commit" #"  Komentarz dlugi "
 git add. ;git commit  -m "Commit 2"   |-m tworzy etykietke
 
 git log --oneline # kronika commitow
 ========================
-cd d:/
 git init --bare bank # repozytorium nagie
 #----------------------------------------------- 
 git init robocze # repozytorium do pracy
@@ -54,7 +51,6 @@ git config --local user.email szef@hotmail.com
 git remote add origin d:/bank
 git config --local alias.drz 'log --oneline --graph --all'
 
-cd d:/
 git init --bare bank # repozytorium nagie
 #----------------------------------------------- 
 git init robocze # repozytorium do pracy
