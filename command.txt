@@ -1,0 +1,49 @@
+cd katalog # komentarz
+pwd # Print Working
+
+vim # editor
+shift + insert #wklejanie 
+clear # cls
+
+
+Polecenie :
+1.git
+2.
+==============
+git init #START , powstanie katalog .git
+ls -la # costam lista
+git status
+
+git add nazwa_istniejacegopliku.rozszerzenie
+git add -h lista opcji?
+
+git add --help
+git commit -m "Pierwszy commit" #"  Komentarz "
+git add. ;git commit  -m "Commit 2"   |-m tworzy etykietke
+
+git log --oneline # kronika commitow
+========================
+cd robocze # przejscie do folderu
+cd d:/"sciezka do folderu"
+git init --bare bank # repozytorium nagie
+git init robocze # repozytorium do pracy
+#----------------------------------------------- 
+echo puchatek>>zad2.txt
+
+git push -u origin master
+git log     #?
+git clone bank szef
+
+#-------------------Konfiguracja repozytorium
+git config --local user.name jakas_nazwa
+git config --local user.email jakis_email
+git remote add origin     
+    #po origin miejsce docelowe pushowanych plikow np. origin d:/bank 
+    lub origin https:"adres rep w github"
+git config --local alias.drz 'log --oneline --graph --all' 
+    # wlasny skrot do jakiejsc komendy
+git drz                       
+    #historia commitow sciaga z banku dane?
+git config --local -l
+git config --system --unset credential.helper
+    #usuwa jakies poswiadczenia czy cos
