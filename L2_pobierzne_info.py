@@ -21,3 +21,9 @@ for index, element in enumerate(lista,start=1):
     print(f'wiersz {index}:{element}')
     #index,element =(1,1) rozpakowanie
     #krotka, ang. tuple, np, (indeks,element)
+
+
+    try:
+        instrukcja
+        wyjatki:
+        awaryjne instrukcje
