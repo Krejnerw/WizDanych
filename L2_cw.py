@@ -55,6 +55,27 @@
 lista=[]
 i=input("ile liczb chcesz dodac")
 for lista in range(i)
-a=input("liczba: ")
-lista.append(a)
-lista[i]
+    a=input("liczba: ")
+    lista.append(a)
+    print(lista[i])
+    #zle 
+#zad9
+# a=input("liczba wielocyfrowa: ")
+# a=int(a)
+# wynik=0
+# while (a>0):
+#     wynik=wynik+a%10
+#     a=a//10
+#else:
+#     print("wynik: ",wynik)
+
+#zad10
+# a=input("podaj wysokosc wiezy: ")
+# a=int(a)
+# while(a<0 or a>10):
+#     print("wybierz liczbe od 0 do 10")
+#     a=input("podaj wysokosc wiezy: ")
+#     a=int(a)  
+# else:
+#     for i in range(a):
+#         print("A"*(i+1))
