@@ -29,7 +29,6 @@ liczba=int("100")
 print("Ala "* 10)
 
 # listy sa mutowalne
-#nie dziala ale nwm co
 
 lista = []
 print(type(lista))
