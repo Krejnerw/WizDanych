@@ -27,3 +27,6 @@ for index, element in enumerate(lista,start=1):
         instrukcja
         wyjatki:
         awaryjne instrukcje
+
+a,b=input(),input()
+print(a,b)

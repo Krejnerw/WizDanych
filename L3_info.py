@@ -23,15 +23,21 @@ print(len([print(f"liczba: {x}")for x in range(5)]))
 #slowniki i zamiana klucza z wartoscia
 
 slownik = {'imie': 'Adam', 'wiek': 28}
-
+#wypisze klucze
 for cos in slownik: #slownik.keys()
     print(cos)
-
+    #imie
+    #wiek
+#wypisze wartosci
 for cos in slownik.values():
     print(cos)
-
+    #Adam
+    #28
+#wypisze zbiory
 for cos in slownik.items():
     print(cos)
+    # ('imie', 'Adam')
+    # ('wiek', 28)
 
 krotka = tuple(['Marek', 23])
 krotka = ('Marek', 23)

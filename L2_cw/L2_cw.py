@@ -60,14 +60,23 @@ for lista in range(i)
     print(lista[i])
     #zle 
 #zad9
-# a=input("liczba wielocyfrowa: ")
-# a=int(a)
+# a=int(input("liczba wielocyfrowa: "))
 # wynik=0
 # while (a>0):
 #     wynik=wynik+a%10
 #     a=a//10
 #else:
 #     print("wynik: ",wynik)
+
+# zad9 bartka
+# i=0
+# a=input()
+# cos = list(a)
+# b=0
+# while i!=len(a):
+#     b=b+int(cos[i])
+#     i+=1
+# print(b)
 
 #zad10
 # a=input("podaj wysokosc wiezy: ")
@@ -79,3 +88,7 @@ for lista in range(i)
 # else:
 #     for i in range(a):
 #         print("A"*(i+1))
+
+#zad11
+
+#zad12 i dalej?
