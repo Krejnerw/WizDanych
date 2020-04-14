@@ -6,5 +6,6 @@ def ciag(* liczby):
         for i in liczby:
             iloczyn*=i
         return iloczyn
+        
 print(ciag())
 print(ciag(1,2,3))
