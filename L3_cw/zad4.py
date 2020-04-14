@@ -5,5 +5,6 @@ def monotonicznosc(a):
         print("f.malejaca")
     else:
         print("f.stala")
+        
 n=int(input("podaj a: "))
 monotonicznosc(n)
