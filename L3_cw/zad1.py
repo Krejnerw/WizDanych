@@ -5,5 +5,5 @@ print(A)
 B=[2**i for i in range(11)]
 print(B)
 #C={x:xcB i x podziel przez 4}
-C={x for x in B if x%4==0}
+C=[x for x in B if x%4==0]
 print(C)
