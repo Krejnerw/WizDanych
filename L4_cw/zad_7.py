@@ -18,13 +18,13 @@ class Robaczek:
         self.x+=ile_krokow*self.krok
 
     def pokaz_gdzie_jestes(self):
-        return self.x,self.y
+        print("X:",self.x,"Y:",self.y) 
 
 
 postac=Robaczek(0,0,2)
 postac.idz_w_dol(5)
 postac.idz_w_lewo(2)
-print(postac.pokaz_gdzie_jestes())
+postac.pokaz_gdzie_jestes()
 postac.idz_w_gore(5)
 postac.idz_w_prawo(2)
-print(postac.pokaz_gdzie_jestes())
+postac.pokaz_gdzie_jestes()

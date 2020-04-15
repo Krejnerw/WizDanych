@@ -18,16 +18,17 @@ class Robaczek:
         self.x+=ile_krokow*self.krok
 
     def pokaz_gdzie_jestes(self):
-        return self.x,self.y
+        print("X:",self.x,"Y:",self.y) 
 
     def __del__(self):
-        return
+        del self.x
+        del self.y
+        del self.krok
+        print("postac umiera")
 
 
 postac=Robaczek(0,0,2)
 postac.idz_w_dol(5)
 postac.idz_w_lewo(2)
-print(postac.pokaz_gdzie_jestes())
-postac.__del__()
-#del postac
-print(postac.pokaz_gdzie_jestes())
+postac.pokaz_gdzie_jestes()
+postac="To"
