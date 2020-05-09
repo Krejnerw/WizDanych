@@ -29,16 +29,15 @@ s = s[0] + 'a' + s[2:]
 print(s)
 
 #Oto przykłady metod, które możemy wywołać dla napisu s:
-# s.capitalize() – zwraca napis ze zmienioną pierwszą 
-    # literą na wielką
-# s.isdigit() – sprawdza, czy wszystkie znaki są cyframi
-# s.islower() – sprawdza, czy wszystkie litery są małe
-# s.center(długość) – centruje napis w polu o podanej 
-    # długości (uzupełniając spacjami)
-# s.rjust(długość) – wyrównuje do prawej w polu o podanej 
-    # długości (uzupełniając spacjami)
-# s.count(s1) – zlicza wystąpienia podciągu s1 w s
-# s.lstrip() – zwraca napis z usuniętymi wiodącymi białymi znakami
+s.capitalize() # zwraca napis ze zmienioną pierwszą literą na wielką
+s.isdigit() # sprawdza, czy wszystkie znaki są cyframi
+s.islower() # sprawdza, czy wszystkie litery są małe
+s.center(długość) # centruje napis w polu o podanej długości 
+                  # (uzupełniając spacjami)
+s.rjust(długość) # wyrównuje do prawej w polu o podanej długości 
+                 # (uzupełniając spacjami)
+s.count(s1) # zlicza wystąpienia podciągu s1 w s
+s.lstrip() # zwraca napis z usuniętymi wiodącymi białymi znakami
     # Podkreślmy: funkcje te nie zmieniają s!  
     # Np. s.center(...) zwraca nowy napis.  
     # Przypominamy też wielce użyteczną funkcję len(s) 
@@ -72,6 +71,36 @@ zm1, zm2, zm3, zm4 = 1, 2, 3, 4
 a = 3 
 a += 1
 
+print("ALA ma"+"kotow") # konkatencja
+
+print("ALA ma" + str(5) + " kotow")
+liczba=int("100")
+
+print("Ala "* 10)
+
+# listy sa mutowalne
+
+lista = []
+print(type(lista))
+
+lista2= [1,2,3]
+print(lista2[0])
+imie="maggi"
+print(imie[0])
+lista2[0]= 5
+imie ="pupi"
+
+imie.swapcase() #male na duze duze na male ale nie w stringu
+print(imie) #bd bez zmian
+print(imie.swapcase())
+imie=imie.swapcase()
+print(imie)
+"Ala".swapcase()
+lista2.append(1) #dodaje element na koniec listy
+
+lista3= [1,"ala", 4.5,None,True, [1,2]] #sortowanie nie wywyzsza zadnego typu
+lista3[5][1]
+
 #import biblioteki matematycznej
 from math import *
 a = 0.264
@@ -79,3 +108,65 @@ print(round(a))
 print(pi)
 print(sin(2))
 print(sqrt(9))
+
+macierz = [
+ [1,2,3],
+  [4,5,6],
+  [7,8,9]
+  ]
+macierz [1][1] #5
+nowa =lista2 + macierz 
+
+#slownik 
+slownik = {}
+slownik ['imie'] = 'Adam'
+slownik [0]= 'Adam'
+print (slownik)
+slownik2 = {'imie': 'Adam', 0 : 'Adam'}
+print(slownik2.keys())
+print(slownik2.values())
+
+#A dictionary can also contain many dictionaries, this is called nested dictionaries.
+
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+#Or, if you want to nest three dictionaries that already exists as dictionaries:
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+#It is also possible to use the dict() constructor to make a new dictionary:
+
+thisdict = dict(brand="Ford", model="Mustang", year=1964)
+# note that keywords are not string literals
+# note the use of equals rather than colon for the assignment
+print(thisdict)
