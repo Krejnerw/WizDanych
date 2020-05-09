@@ -1,4 +1,4 @@
-
+import math as m
 #zad1
 # a=input("Wpisz zdanie\n")
 # print (a.count(" "))
@@ -124,11 +124,22 @@
 #         print(str(j*i),end='\t')
 #     print('\n')
 
-# zad13 
+# try:
+    #     instrukcja
+    #     wyjatki:
+    #     awaryjne instrukcje
+# zad13 przestudiowac inne bledy link w zesz
 
 # zad 14
-
-# zad 15 #spr czy jest cyfra jak nie to blad
-# a = input('podaj liczbe : ')
-# if a.isdigit()==False:
-#     print('blad')
+# x = int(input("Proszę wprowadzić liczbę: "))
+# try:
+#     print(m.sqrt(x))
+# except ValueError:
+#     print ("Ups! podana liczba jest ujemna")
+# # zad 15 #spr czy jest cyfra jak nie to blad
+# while 1:
+#     try:
+#         x = int(input("Proszę wprowadzić liczbę: "))
+#         break
+#     except ValueError:
+#         print ("Uch! to nie jest poprawna liczba! Spróbuj jeszcze raz...")
