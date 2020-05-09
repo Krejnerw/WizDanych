@@ -8,26 +8,27 @@
 # print("Podaj 2 liczby")
 # a=sys.stdin.readline()
 # a=int(a)
-# b=sys.stdin.readline()
-# b=int(b)
-# print("iloczyn : ", int(a*b))
-# sys.stdout.write(str(a*b))
+# b=int(sys.stdin.readline())
+# # b=int(b)
+# print("iloczyn : ", a*b)
+# sys.stdout.write('tekst '+str(a*b))
+    # vol2
+# import sys 
+# a,b = int(sys.stdin.readline()),int(sys.stdin.readline())
+# print('iloczyn : ' + str(a*b))
 
 #zad3
 # == ,!== > < ,>= ,<= ,in ,and ,or
 
-#zad4
-# a=input("Podaj liczbe : \n")
-# print('Bezwzgledna twojej liczby to : ', abs(int(a)))
+# #zad4
+# a = float(input("Podaj liczbe : \n"))
+# print('Bezwzgledna twojej liczby to : ', abs(int(a))) # podaje tylko wartosc calkowita
 
-#zad5 a (0,10) oraz a>b lub b>c
-# a=input("Podaj liczbe 1 : \n")
-# b=input("Podaj liczbe 2 : \n")
-# c=input("Podaj liczbe 3 : \n")
-# a=int(a)
-# b=int(b)
-# c=int(c)
-# x,y =(int(input("l1 : ")),(int(input("l2 : "))))#cos tu nie halo
+# zad5 a (0,10) oraz a>b lub b>c
+# a = int(input("Podaj liczbe 1 : \n"))
+# b = int(input("Podaj liczbe 2 : \n"))
+# c = int(input("Podaj liczbe 3 : \n"))
+# x, y, z = int(input("l1 : ")), int(input("l2 : ")), int(input("l3 : "))
 
 # if a>0 and a<10 :
 #     if a>b or b>c:
@@ -35,60 +36,99 @@
 # else:
 #     print("nie")
 
-#zad6
+# # zad6
 # for i in range(21):
 #   if i % 5 == 0 and i!=0:
 #     print(i)
 
-#     x = range(6)
-# for n in x:
-#   print(n)
-
-# for x in range(10):
-#     print (x)
-
-#zad7
+# # zad7
 # x,y =(int(input("l1 : ")),(int(input("l2 : "))))
 # print("L1^2 =",pow(x,2),("L2^2 ="),pow(y,2))
 
-#zad8
-lista=[]
-i=input("ile liczb chcesz dodac")
-for lista in range(i)
-    a=input("liczba: ")
-    lista.append(a)
-    print(lista[i])
-    #zle 
-#zad9
-# a=int(input("liczba wielocyfrowa: "))
+# # zad8
+# lista=[]
+# i = int(input("ile liczb chcesz dodac : "))
+# for x in range(i):
+#     a=input("liczba: ")
+#     lista.append(a)
+# print(lista)
+
+# # zad9
+# a=list(input("liczba wielocyfrowa: "))
+# print(a)
 # wynik=0
-# while (a>0):
-#     wynik=wynik+a%10
-#     a=a//10
-#else:
+# i=0
+# while (i !=(len(a))):
+#     wynik+=int(a[i])
+#     i+=1
+# else:
 #     print("wynik: ",wynik)
 
-# zad9 bartka
-# i=0
-# a=input()
-# cos = list(a)
-# b=0
-# while i!=len(a):
-#     b=b+int(cos[i])
-#     i+=1
-# print(b)
-
-#zad10
-# a=input("podaj wysokosc wiezy: ")
-# a=int(a)
-# while(a<0 or a>10):
+# # zad10
+# a = int(input("podaj wysokosc wiezy: "))
+# while (a<0 or a>10):
 #     print("wybierz liczbe od 0 do 10")
-#     a=input("podaj wysokosc wiezy: ")
-#     a=int(a)  
+#     a = int(input("podaj wysokosc wiezy: ")) 
 # else:
 #     for i in range(a):
 #         print("A"*(i+1))
 
-#zad11
+# # zad 11
+# a = int(input('podaj wysokosc od 3 do 9 : '))
+# if(a%2!=0):
+#     sr=a//2
+#     for j in range(sr+1):
+#         for i in range(a):
+#             if i in range(sr-j,sr+1+j):
+#                 # print(' kropka '+str(j)+str(i),end='')
+#                 print('o',end='')
+#             else:
+#                 print(' ',end='')
+#                 # print(' spacja '+str(j)+str(i),end='')
+#         print('\n')
+#     for j in range(1,a-sr):
+#         for i in range(a):
+#             if i in range(j,a-j):
+#                 # print(' kropka '+str(j)+str(i),end='')
+#                 print('o',end='')
+#             else:
+#                 print(' ',end='')
+#                 # print(' spacja '+str(j)+str(i),end='')
+#         print('\n')
+# else:
+#     sr=a//2
+#     for j in range(sr+1):
+#         for i in range(a):
+#             if i in range(sr-1-j,sr+1+j):
+#                 # print(' kropka '+str(j)+str(i),end='')
+#                 print('o',end='')
+#             else:
+#                 print(' ',end='')
+#                 # print(' spacja '+str(j)+str(i),end='')
+#         print('\n')
+#     for j in range(1,a-sr):
+#         for i in range(a):
+#             if i in range(j,a-j):
+#                 # print(' kropka '+str(j)+str(i),end='')
+#                 print('o',end='')
+#             else:
+#                 print(' ',end='')
+#                 # print(' spacja '+str(j)+str(i),end='')
+#         print('\n')
 
-#zad12 i dalej?
+# # zad12
+# for i in range(1,11):
+#     for j in range(1,11):
+#         # print('%(a)d*%(b)d = %(c)d' %{'a':j,'b':i, 'c':i*j},end='   ')
+#         # print(str(j)+' * '+str(i)+' = '+str(j*i),end='\t')
+#         print(str(j*i),end='\t')
+#     print('\n')
+
+# zad13 
+
+# zad 14
+
+# zad 15 #spr czy jest cyfra jak nie to blad
+# a = input('podaj liczbe : ')
+# if a.isdigit()==False:
+#     print('blad')
